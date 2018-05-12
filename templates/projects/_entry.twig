@@ -1,0 +1,20 @@
+{% extends "_layouts/main" %}
+
+{% block main %}
+
+<div id="center">
+  <div id="content-container">
+    <div id="content-caption">
+      <div class="caption">{{ entry.description }}</div>
+      <div class="caption">{{ entry.client }}</div>
+      <div class="caption">{{ entry.contributor }}</div>
+    </div>
+  {% for image in entry.image %}
+    <div class="content">
+      <img src="{{ image.getUrl() }}">
+    </div>
+  {% endfor %}
+  </div>
+</div>
+
+{% endblock %}

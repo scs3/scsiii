@@ -1,0 +1,7 @@
+{% extends "_layouts/main" %}
+{% block main %}
+    <div id="card-container">
+      {% for entry in craft.entries.section('projects').all %}<a href="{{ entry.url }}"><div class="card"><img src="{{ entry.image.one().getUrl('twoFiftyPX') }}"></div></a>
+      {% endfor %}
+    </div>
+{% endblock %}
