@@ -9,7 +9,7 @@
       <div class="caption">{{ entry.client }}</div>
       <div class="caption">{{ entry.contributor }}</div>
     </div>
-  {% for image in entry.image.all() %}
+  {% for image in entry.image %}
     <div class="content">
       <img src="{{ image.getUrl() }}">
     </div>
