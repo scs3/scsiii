@@ -33,7 +33,7 @@ return [
         'siteUrl' => null,
 
         // Dev Mode (see https://craftcms.com/support/dev-mode)
-        'devMode' => false,
+        'devMode' => true,
     ],
 
     // Staging environment settings
@@ -45,6 +45,6 @@ return [
     // Production environment settings
     'production' => [
         // Base site URL
-        'siteUrl' => null,
+        'siteUrl' => 'http://samsolomon.co',
     ],
 ];
